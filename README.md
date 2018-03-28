@@ -18,7 +18,7 @@ outputs
 
 ```
 {"page":{"id":1234,"title":"a cool title","shop_id":98765,"handle":"a-cool-title","body_html":"<div>example</div>"...
-// streaming responses from all POST request
+// streaming responses from all POST requests
 ```
 
 Makes a GET request to the source site's shopify pages api endpoint, and then makes POST requests to the duplicate shopify site to upload those pages.
