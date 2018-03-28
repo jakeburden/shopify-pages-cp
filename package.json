@@ -1,6 +1,6 @@
 {
   "name": "shopify-pages-cp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Copy Shopify pages from a source site to duplicate (sink) site.",
   "main": "index.js",
   "scripts": {
