@@ -6,7 +6,13 @@
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": ["shopify", "api", "copy", "pages", "stream"],
+  "keywords": [
+    "shopify",
+    "api",
+    "copy",
+    "pages",
+    "stream"
+  ],
   "author": "Jake Burden <jake@doge.haus>",
   "license": "MIT",
   "dependencies": {
@@ -16,5 +22,13 @@
   },
   "devDependencies": {
     "env2": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jekrb/shopify-pages-cp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jekrb/shopify-pages-cp/issues"
+  },
+  "homepage": "https://github.com/jekrb/shopify-pages-cp#readme"
 }
