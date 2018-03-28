@@ -4,7 +4,7 @@
 
 Makes a GET request to the source site's shopify pages api endpoint, and then makes POST requests to the duplicate shopify site to upload those pages.
 
-This module uses streams for parsing and making request, so theoritcally the amount of pages this could handle is infinite.  Each POST however, will happen one at a time to help prevent rate limiting or other possible network throttles that can occur when opening a large number of connections at a time.  The return value is a stream of responses from each POST request.
+This module uses streams for parsing and making requests, so theoretically the amount of pages this could handle is infinite. Each POST, however, will happen one at a time to help prevent rate limiting or other possible network throttles that can occur when opening a large number of connections at a time. The return value is a stream of responses from each POST request.
 
 ## Auth
 
