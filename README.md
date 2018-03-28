@@ -2,14 +2,6 @@
 
 > Copy Shopify pages from a source site to duplicate (sink) site.
 
-Makes a GET request to the source site's shopify pages api endpoint, and then makes POST requests to the duplicate shopify site to upload those pages.
-
-This module uses streams for parsing and making requests, so theoretically the amount of pages this could handle is infinite. Each POST, however, will happen one at a time to help prevent rate limiting or other possible network throttles that can occur when opening a large number of connections at a time. The return value is a stream of responses from each POST request.
-
-## Auth
-
-You'll need an API Key and Password associated with a Shopify private app.  To make a private app go to: https://[yoursitehere].myshopify.com/admin/apps/private
-
 ## Usage
 
 ```js
@@ -28,6 +20,14 @@ outputs
 {"page":{"id":1234,"title":"a cool title","shop_id":98765,"handle":"a-cool-title","body_html":"<div>example</div>"...
 // streaming responses from all POST request
 ```
+
+Makes a GET request to the source site's shopify pages api endpoint, and then makes POST requests to the duplicate shopify site to upload those pages.
+
+This module uses streams for parsing and making requests, so theoretically the amount of pages this could handle is infinite. Each POST, however, will happen one at a time to help prevent rate limiting or other possible network throttles that can occur when opening a large number of connections at a time. The return value is a stream of responses from each POST request.
+
+## Auth
+
+You'll need an API Key and Password associated with a Shopify private app.  To make a private app go to: https://[yoursitehere].myshopify.com/admin/apps/private
 
 ## API
 
